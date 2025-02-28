@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #62f500;
+    --pink: #f5009f;
+    --orange: #ff5c00;
+    --yellow: #eaff00;
+}
+
+.laranja {
+    color: var(--orange);
+}
+
+.amarelo {
+    background-color: var(--yellow);
+}
+
+.z-social {
+    z-index: 2000;
+}
+
+.main-wrapper {
+    height: 100vh;
+}
+
+.icon-size {
+    max-width: 60px;
+}
+
+.icon-size-sm {
+    max-width: 30px;
+}
+
+.icon-margin {
+    margin-top: 8em;
+}
+
+.icon-responsive {
+    top: auto;
+}
+
+.tape-left {
+    bottom: -10px;
+    left: -10px;
+}
+
+.tape-right {
+    bottom: -15px;
+    right: -10px;
+}
+
+.tape-mobile {
+    max-width: 100px;
+}
+
+.tape-mobile-2 {
+    max-width: 150px;
+}
+
+.jubu-tape {
+    bottom: -40px;
+}
+
+.email-margin {
+    margin-top: 6em;
+}
+
+.bona-nova {
+    font-family: "Bona Nova", serif;
+}
+
+.syne {
+    font-family: "Syne", serif;
+}
+
+.arrow {
+    animation: pulse-animation 3s infinite;
+}
+
+.icon-animation {
+    transition: all .3s ease;
+}
+
+.icon-animation:hover {
+    scale: 1.2;
+    rotate: -7deg;
+}
+
+.mw-carousel-img {
+    max-width: 276px !important;
+}
+
+.project-tape {
+    left: -50px;
+    top: -40px;
+}
+
+.project-animation {
+    transition: all .3s ease;
+}
+
+.project-animation:hover {
+    scale: 1.008;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.35));
+}
+
+.video-container {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation */
+
+@keyframes pulse-animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+      opacity: .8;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    .jubu-tape {
+        left: 140px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .icon-responsive {
+        top: 50% !important;
+    }
+
+    .tape-mobile, .tape-mobile-2 {
+        max-width: 200px;
+    }
+
+    .jubu-tape {
+        left: 0px !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .mw-carousel-img {
+        max-width: 240px !important;
+    }
+}
+
+@media (max-width: 999px) {
+    .mw-carousel-img {
+        max-width: 225px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .mw-carousel-img {
+        max-width: 120px !important;
+    }
+}
