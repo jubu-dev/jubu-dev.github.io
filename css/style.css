@@ -68,6 +68,14 @@
     bottom: -40px;
 }
 
+.juworks {
+    opacity: 0;
+}
+
+.text-info {
+    opacity: 0;
+}
+
 .email-margin {
     margin-top: 6em;
 }
