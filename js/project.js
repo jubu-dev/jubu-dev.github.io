@@ -22,15 +22,33 @@
     
     textInfo.delay(.75)
     textInfo.play()   
-    
-    let projectTape = gsap.fromTo('.project-tape', 0.5, {        
-        opacity: 0,
-        x: -30
-    }, {
-        opacity: 1,
-        x:0,
-    });
-
-    projectTape.play()
-
    }) 
+
+   function handleScreenSize() {
+    if (window.innerWidth < 576) {
+        let projectTapeMobile = gsap.fromTo('.project-tape', 0.5, {        
+            opacity: 0,
+            x: -30
+        }, {
+            opacity: 1,
+            x: 0,
+            scale: .75
+        });
+        
+        projectTapeMobile.play();
+    } else {
+        let projectTape = gsap.fromTo('.project-tape', 0.5, {        
+            opacity: 0,
+            x: -30
+        }, {
+            opacity: 1,
+            x: 0
+        });
+        
+        projectTape.play();
+    }
+}
+
+// Executar a função ao carregar a página e ao redimensionar a tela
+window.addEventListener('load', handleScreenSize);
+window.addEventListener('resize', handleScreenSize);
